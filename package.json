@@ -1,0 +1,20 @@
+{
+  "name": "express-cluster",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "dev-cluster": "nodemon app.js",
+    "start": "node index.js",
+    "start-cluster": "node app.js",
+    "ddos": "autocannon -c 1000 localhost:8001",
+    "ddos-cluster": "autocannon -c 1000 localhost:8000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
